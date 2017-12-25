@@ -19,7 +19,8 @@ import org.springframework.stereotype.Service;
  * @author demys
  */
 @Service("productService")
-public class ProductServiceImpl extends GenericServiceImpl<Product, Integer> implements ProductService{
+public class ProductServiceImpl extends GenericServiceImpl<Product, Integer>
+        implements ProductService{
     
     @Autowired
     @Getter(AccessLevel.PROTECTED)

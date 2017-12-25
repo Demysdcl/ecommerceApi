@@ -7,6 +7,7 @@ package br.com.ecommerce.productAPI.service.impl;
 
 import br.com.ecommerce.productAPI.entity.Category;
 import br.com.ecommerce.productAPI.repository.CategoryRepository;
+import br.com.ecommerce.productAPI.service.CategoryService;
 import java.io.Serializable;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -16,7 +17,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  * @author demys
  */
-public class CategoryServiceImpl extends GenericServiceImpl<Category, Integer>{
+public class CategoryServiceImpl extends GenericServiceImpl<Category, Integer> 
+        implements CategoryService{
     
     @Autowired
     @Getter(AccessLevel.PROTECTED)
