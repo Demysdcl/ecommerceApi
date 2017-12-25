@@ -24,6 +24,6 @@ public class ProductServiceImpl extends GenericServiceImpl<Product, Integer>
     
     @Autowired
     @Getter(AccessLevel.PROTECTED)
-    private ProductRepository repository; 
+    private ProductRepository repository;
     
 }

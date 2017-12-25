@@ -7,7 +7,6 @@ package br.com.ecommerce.productAPI.controller;
 
 import br.com.ecommerce.productAPI.entity.Category;
 import br.com.ecommerce.productAPI.service.CategoryService;
-import java.io.Serializable;
 import lombok.AccessLevel;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author demys
  */
-
 @RestController
 @RequestMapping(value = "/categories")
 public class CategoryController extends GenericController<Category, Integer>{
