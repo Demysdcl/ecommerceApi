@@ -3,9 +3,11 @@ buildscript {
         springBootVersion = '1.5.9.RELEASE'
         mainClass = 'br.com.ecommerce.productAPI.ProductApiApplication'
     }
+
     repositories {
         mavenCentral()
     }
+    
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
@@ -14,6 +16,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
 
 group = 'br.com.ecommerce'
 version = '0.0.1-SNAPSHOT'

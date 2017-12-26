@@ -1,13 +1,17 @@
 package br.com.ecommerce.productAPI.entity;
 
 import br.com.ecommerce.productAPI.enumeration.OriginEnum;
+import java.util.Calendar;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
 
@@ -24,8 +28,14 @@ public class Product {
     @Column(length = 80)
     private String description;
 
+    @Lob
+    private String image;
+    
     @NotNull
     private Double price;
+
+    @Temporal(TemporalType.DATE)
+    private Calendar purchaseDate;
     
     @NotNull
     @ManyToOne
